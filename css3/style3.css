@@ -13,8 +13,8 @@ header{
 
 .title{
     position: absolute;
-    top: 25%;
-    left: 40%;
+    top: 40%;
+    left: 67%;
     transform: translate(-50%,-50%);
 }
 .title h1{
@@ -24,15 +24,31 @@ header{
     text-shadow:5px 5px #000000;
     margin-top: 0.67em;
     margin-bottom: 0.3em;
-    position: center;
     
 }
 
 .title p {
-    color:rgba(202, 235, 19, 0.459);
-    font-family:cursive;
+    color:rgba(193, 202, 142, 0.911);
+    font-family: cursive;
     text-shadow:5px 5px rgb(0, 0, 0);
     font-size: 18px;
     text-indent: 10%;
+    position: center;
+    margin-top: 60px;
+}
+@media  screen and (max-width) {
+    .title{
+        position: absolute;
+        top: 20%;
+    } 
+    .title h1{
+        font-size: 4.37em; 
+        margin-top: 0.67em;
+        margin-bottom: 0.3em;
+    }
+    .title p {
+        font-size: 18px;
+    }
 
+    
 }

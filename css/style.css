@@ -5,33 +5,32 @@
 }
 
 header{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../1.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),  url(../1.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
 }
 
 ul{
-    float:right;
+    float:left;
     list-style: none;
     margin-top: 25px;
 }
 
 ul li{
-    display: inline-block;
+    display:inline-block;
 }
 
 ul li a{
     text-decoration: currentColor;
-    color: #f0e5e5cb;
-    padding: 5px 20px;
-    border: 1px inset #706668;
+    color: #e7dfdfcb;
+    padding: 8px 20px;
+    border: 4px inset #706668;
     transition: 0.6s ease-in-out;
-
 }
 
 ul li a:hover{
-    background-color: rgb(185, 206, 195);
+    background-color: rgb(162, 179, 170);
     color: #000;
 }
 
@@ -40,21 +39,33 @@ ul li.active a{
     color: #000;
 }
 .logo img{
-    float: left;
-    width: 200px;
+    float: right;
+    width: 250px;
     height: auto;
 }
 
 .main{
     max-width: 1200px;
-    margin: auto;
+    margin: unset ;
 }
+
+
 
 .title{
     position: absolute;
-    top: 45%;
-    left: 50%;
+    top: 30%;
+    left: 20%;
     transform: translate(-50%,-50%);
+    border-style:double;
+    width: 800px;
+    margin:inherit;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    border-radius: 25px;
+    background-color: rgba(178, 192, 189, 0.212);
+    box-shadow: 0 0 17px #333;
+    border-color: rgb(66, 51, 48);
+
 }
 
 .title h1{
@@ -64,24 +75,27 @@ ul li.active a{
     text-shadow: 8px 5px 9px #000000;
     margin-top: 0.67em;
     margin-bottom: 0.3em;
-    position: center;
+    position: absolute;
+    left: 150px;
+    bottom: 65px;
 }
 
 
 .title p{
     position: relative;
-    top: 70%;
-    left: 50%;
+    top: 80%;
+    left: 55%;
     transform: translate(-50%,-50%);
-    color:rgba(231, 228, 226, 0.596);
+    color:rgba(175, 169, 169, 0.856);
     font-size: 30px; 
     transition:cubic-bezier(0.19, 1, 0.22, 1);
-    text-shadow: 5px 5px black;
+    text-shadow: 8px 5px 9px #110e0e;
+    font-family: Cursive;
 }
 
 .button{
     position: absolute;
-    top: 65%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -95,4 +109,48 @@ ul li.active a{
     top: 70%;
     margin-top: 0.67em;
     margin-bottom: 0.1em;
+}
+@media screen and (max-width:800px) {
+    .h1{
+        font-size: 1em;
+    }
+    .p{
+        font-size: 1.5em;
+    }
+    .title{
+        font-size: 1.5em;
+        width: 70%;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+    .logo img{
+        width: 250px;
+        }
+    .button{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+    }
+    .btn{
+        padding: 10px 30px;
+        border: 2px inset #667943;
+        top: 70%;
+        margin-top: 0.67em;
+        margin-bottom: 0.1em;
+    }
+    .title p{
+        position: relative;
+        top: 80%;
+        left: 55%;
+        font-size: 0.42em; 
+    }
+    .title h1{
+        font-size: 1.5em; 
+        margin-top: 0.67em;
+        margin-bottom: 0.3em;
+        position: absolute;
+        
+        
+    }   
 }
